@@ -3,7 +3,7 @@ var h = serverTime.getHours();
 var m = serverTime.getMinutes();
 
 function updateTime() {
-    serverTime = new Date(serverTime.getTime() + 1000);
+    serverTime = new Date(serverTime.getTime() + 10000);
     h = serverTime.getHours();
     m = serverTime.getMinutes();
     if (h >= 12) {

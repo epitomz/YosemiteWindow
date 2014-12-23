@@ -1,6 +1,7 @@
 /* ------------------ CONNECTION SCREEN -------------------------- */
-#locked {
-    background-image: url('../img/bg.jpg') ;
+
+body {
+    background: url('../img/bg.jpg') 50% no-repeat fixed;
     background-size: cover;
     margin: 0;
     z-index: 1;
@@ -8,8 +9,8 @@
 
 #menu-bar {
     position: absolute;
-    top: -7px;
-    right: 9px;
+    top: -10px;
+    right: 8px;
     z-index: 20;  
 }
 
@@ -20,6 +21,7 @@
     display: inline-block;
 }
 
+/* ------------------ SCREEN -------------------------- */
 
 .window {
   -webkit-border-radius: 4px;
@@ -270,3 +272,11 @@ span.new .plus.y {
   margin:auto;
   
 } 
+
+.dock {
+    background: url('../img/bg-dock.png');
+    width: 500px;
+    height: 20px;
+    position: absolute;
+    bottom: 0;
+    top: 200px;
