@@ -72,12 +72,18 @@
   </div>  
 </div>
 
- <div class="dock">
-    
-  </div>
+<div class="dock">
+	<img src="img/finder.png" alt="finder" style="width: 45px;"/>
+</div>
   
 <script>
-$( ".window" ).draggable({ cancel: ".inside,input,textarea" });
+var x2 = $(document).width()-1100;
+var y2 = $(document).height()-1100;
+
+$( ".window" ).draggable({ 
+	cancel: ".inside,input,textarea",
+	containment: [ -300, -93, x2, 1300 ] 
+});
 
 $("input.address").focus(function(){
   $(".fa-refresh").hide(500);

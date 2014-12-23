@@ -411,3 +411,16 @@ span.new .plus.y {
 	font-size: 16px;
 	cursor: default;
 }
+
+/* -------------- DOCK ----------------- */
+.dock {
+	background: url(../img/bg-blurred.jpg) no-repeat fixed;
+	position: absolute;
+	width: 700px;
+	height: 50px;
+	bottom: 0;
+	left: 25%;
+	border-top-left-radius: 7px;
+	border-top-right-radius: 7px;
+
+}
