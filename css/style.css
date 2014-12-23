@@ -1,6 +1,23 @@
-body {
-  background: url('../img/bg.jpg') 50% no-repeat fixed;
-  background-size: cover;
+/* ------------------ CONNECTION SCREEN -------------------------- */
+#locked {
+    background-image: url('../img/bg.jpg') ;
+    background-size: cover;
+    margin: 0;
+    z-index: 1;
+}
+
+#menu-bar {
+    position: absolute;
+    top: -7px;
+    right: 9px;
+    z-index: 20;  
+}
+
+#menu-bar p {
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+    font-weight: 300;
+    color: white;
+    display: inline-block;
 }
 
 
