@@ -1,10 +1,20 @@
 /* ------------------ CONNECTION SCREEN -------------------------- */
 
 body {
-    background: url('../img/bg.jpg') 50% no-repeat fixed;
-    background-size: cover;
     margin: 0;
     z-index: 1;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+    font-weight: 300;
+}
+
+.screen {
+	background: url('../img/bg.jpg') 50% no-repeat fixed;
+	background-size: cover;
+}
+
+#locked {
+	background: url('../img/bg-blurred.jpg') 50% no-repeat fixed;
+	background-size: cover;
 }
 
 #menu-bar {
@@ -12,8 +22,6 @@ body {
 }
 
 #menu-bar p {
-    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
-    font-weight: 300;
     color: white;
     display: inline-block;
 }
@@ -22,19 +30,80 @@ body {
     position: absolute;
     top: -12px;
     right: 8px;
-    z-index: 20;  
 }
 
 .left-bar {
     position: absolute;
     top: 2px;
-    left: 6px;
-    z-index: 20;  
+    left: 6px; 
 }
 
 .left-bar img {
-    width: 17px;
+    width: 16px;
 }
+
+.battery {
+	height: 14px; 
+	margin-right: 6px; 
+	margin-bottom: -0.5px;
+}
+
+#log {
+	height: 150px;
+	width: 250px;
+	margin: 220px auto;
+}
+
+.round {
+	overflow: hidden;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+    width: 90px;
+    height: 90px;
+    margin: 0 80px;
+}
+
+#log p {
+	color: white;
+	width: 130px;
+	margin: 30px auto;
+	text-align: center;
+}
+
+.password {
+	width: 230px;
+	height: 30px;
+	background-color: rgba(165, 165, 165, 0.6);
+	opacity: 0.2;
+	border-radius: 5px;
+	padding: 0 10px;
+	border: none;
+}
+
+.password:active {
+}
+
+::-webkit-input-placeholder { 
+	color: #f9f9f9;
+	font-style: italic;
+	font-size: 14px;
+	padding-bottom: 25px;
+}
+::-moz-placeholder { 
+	color: #f9f9f9;
+	font-style: italic;
+}
+:-ms-input-placeholder { 
+	color: #f9f9f9; 
+	font-style: italic;
+}
+input:-moz-placeholder { 
+	color: #f9f9f9;
+	font-style: italic;
+}
+
+
 
 /* ------------------ SCREEN -------------------------- */
 
