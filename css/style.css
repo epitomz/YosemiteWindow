@@ -62,7 +62,7 @@ body {
 
 #log {
 	width: 250px;
-	margin: 220px auto;
+	margin: 220px auto 150px auto;
 }
 
 .round {
@@ -114,6 +114,15 @@ input:-moz-placeholder {
 	font-style: italic;
 }
 
+.bottom {
+	width: 60px;
+	margin: 0 auto;
+	color: white;
+	text-align: center;
+}
+.cancel {
+	width: 60px;
+}
 
 
 /* ------------------ SCREEN -------------------------- */
