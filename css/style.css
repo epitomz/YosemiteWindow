@@ -42,14 +42,25 @@ body {
     width: 16px;
 }
 
+.bluetooth {
+	height: 17px;
+	margin-bottom: -2px;
+	margin-right: 8px;
+}
+
+.wifi {
+	height: 22px;
+	margin-bottom: -4px;
+	margin-right: 8px;
+}
+
 .battery {
 	height: 14px; 
-	margin-right: 6px; 
+	margin-right: 8px; 
 	margin-bottom: -0.5px;
 }
 
 #log {
-	height: 150px;
 	width: 250px;
 	margin: 220px auto;
 }
@@ -72,34 +83,34 @@ body {
 }
 
 .password {
-	width: 230px;
+	width: 239px;
 	height: 30px;
-	background-color: rgba(165, 165, 165, 0.6);
-	opacity: 0.2;
+	background-color: rgba(165, 165, 165, 0.15);
 	border-radius: 5px;
-	padding: 0 10px;
+	padding-left: 10px;
 	border: none;
+	font-size: 14px;
+	color: rgba(220, 220, 220, 0.5);
+	outline-width: medium;
 }
 
 .password:active {
 }
 
 ::-webkit-input-placeholder { 
-	color: #f9f9f9;
+	color: rgba(220, 220, 220, 0.5);;
 	font-style: italic;
-	font-size: 14px;
-	padding-bottom: 25px;
 }
 ::-moz-placeholder { 
-	color: #f9f9f9;
+	color: rgba(220, 220, 220, 0.5);;
 	font-style: italic;
 }
 :-ms-input-placeholder { 
-	color: #f9f9f9; 
+	color: rgba(220, 220, 220, 0.5);; 
 	font-style: italic;
 }
 input:-moz-placeholder { 
-	color: #f9f9f9;
+	color: rgba(220, 220, 220, 0.5);;
 	font-style: italic;
 }
 
