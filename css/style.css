@@ -62,7 +62,7 @@ body {
 
 #log {
 	width: 250px;
-	margin: 220px auto 150px auto;
+	margin: 220px auto 180px auto;
 }
 
 .round {
@@ -98,20 +98,16 @@ body {
 }
 
 ::-webkit-input-placeholder { 
-	color: rgba(220, 220, 220, 0.5);;
-	font-style: italic;
+	color: rgba(220, 220, 220, 0.5);
 }
 ::-moz-placeholder { 
-	color: rgba(220, 220, 220, 0.5);;
-	font-style: italic;
+	color: rgba(220, 220, 220, 0.5);
 }
 :-ms-input-placeholder { 
-	color: rgba(220, 220, 220, 0.5);; 
-	font-style: italic;
+	color: rgba(220, 220, 220, 0.5); 
 }
 input:-moz-placeholder { 
-	color: rgba(220, 220, 220, 0.5);;
-	font-style: italic;
+	color: rgba(220, 220, 220, 0.5);
 }
 
 .bottom {
@@ -119,9 +115,14 @@ input:-moz-placeholder {
 	margin: 0 auto;
 	color: white;
 	text-align: center;
+	cursor: pointer;
 }
 .cancel {
-	width: 60px;
+	width: 50px;
+}
+
+.bottom p {
+	margin-top: 10px;
 }
 
 
@@ -136,7 +137,7 @@ input:-moz-placeholder {
   box-shadow: 0 4px 12px rgba(0,0,0,.5);
   width: 800px;
   margin:auto;
-  margin-top:20px;
+  margin-top:120px;
   overflow:hidden;
   border:1px solid #C1C2C2;
 }
@@ -377,10 +378,36 @@ span.new .plus.y {
   
 } 
 
-.dock {
-    background: url('../img/bg-dock.png');
-    width: 500px;
-    height: 20px;
-    position: absolute;
-    bottom: 0;
-    top: 200px;
+.menu {
+	background: rgba(238, 238, 238, 1);
+	height: 27px;
+}
+
+.menu-gauche {
+	width: 550px;
+	float: left;
+}
+
+
+.menu-gauche p {
+	display: inline-block;
+	margin: 0 8px 0 8px;
+	font-size: 15px;
+	cursor: default;
+}
+
+.apple-menu {
+	width: 17px;
+	margin: 4px 4px -1px 17px;
+}
+
+.menu-droite {
+	float: right;
+}
+
+.menu-droite p {
+	display: inline-block;
+	margin: 4px 8px 0 8px;
+	font-size: 16px;
+	cursor: default;
+}
