@@ -63,17 +63,25 @@ $(function() {
     setInterval(updateBattery, 30000);
 });
 
-
-/* ----------------------- WINDOW README ----------------------- */
+/* ----------------------- CLOSE WINDOWS ----------------------- */
 $(document).ready(function() {
     $('.first').click(function() {
-        $('.first').parents().eq(2).hide();
+        $(this).parents().eq(2).hide();
     });
 });
 
+/* ----------------------- README WINDOW ----------------------- */
 $(document).ready(function() {
     $('#textedit').click(function() {
         $('#readme-window').show();
     });
 });
+
+/* ----------------------- SAFARI WINDOW ----------------------- */
+$(document).ready(function() {
+    $('#safari').click(function() {
+        $('#safari-window').show();
+    });
+});
+
 

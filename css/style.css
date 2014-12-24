@@ -135,7 +135,6 @@ input:-moz-placeholder {
   -moz-box-shadow: 0 4px 12px rgba(0,0,0,.5);
   -webkit-box-shadow: 0 4px 12px rgba(0,0,0,.5);
   box-shadow: 0 4px 12px rgba(0,0,0,.5);
-  width: 800px;
   margin-left:300px;
   margin-top:120px;
   overflow:hidden;
@@ -426,7 +425,6 @@ span.new .plus.y {
 /* -------------- WINDOW ----------------- */
 
 .page-title { 
-    margin: 5px 0 0 290px;
     font-size: 14px;
 }
 
@@ -446,4 +444,16 @@ textarea {
 
 textarea:focus {
     outline: none;
+}
+
+#safari-window {
+    width: 800px;
+}
+
+#readme-window {
+    width: 500px;
+}
+
+#readme-window  .page-title {
+    margin: 5px 0 0 150px;
 }
