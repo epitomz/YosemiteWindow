@@ -68,20 +68,13 @@ $(document).ready(function() {
     $('.first').click(function() {
         $(this).parents().eq(2).hide();
     });
-});
-
-/* ----------------------- README WINDOW ----------------------- */
-$(document).ready(function() {
+    
     $('#textedit').click(function() {
         $('#readme-window').show();
     });
-});
-
-/* ----------------------- SAFARI WINDOW ----------------------- */
-$(document).ready(function() {
+    
     $('#safari').click(function() {
         $('#safari-window').show();
-    });
+    });   
 });
-
 

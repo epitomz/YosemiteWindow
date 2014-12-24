@@ -492,6 +492,6 @@ a:hover.tooltips span {
   visibility: visible;
   opacity: 0.8;
   bottom: 55px;
-  margin-left: -50%;
+  margin-left: -120%;
   z-index: 999;
 }
