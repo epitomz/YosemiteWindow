@@ -420,17 +420,22 @@ span.new .plus.y {
 	background: url(../img/bg-blurred.jpg) no-repeat fixed;
 	background-size: 100%;
 	position: absolute;
-	width: 700px;
+	width: 560px;
 	height: 50px;
 	bottom: 0;
-	left: 25%;
+	left: 28%;
 	border-top-left-radius: 7px;
 	border-top-right-radius: 7px;
 }
 
-.dock img {
+.dock a img {
 	width: 40px;
 	margin-top: 4px;
+}
+
+.separator {
+	height: 38px;
+	margin: 6px 5px 0 5px;
 }
 
 /* -------------- WINDOW ----------------- */
