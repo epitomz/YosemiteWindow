@@ -424,3 +424,28 @@ span.new .plus.y {
 	border-top-left-radius: 7px;
 	border-top-right-radius: 7px;
 }
+
+/* -------------- WINDOW ----------------- */
+
+.page-title { 
+    margin: 5px 0 0 290px;
+    font-size: 14px;
+}
+
+.blok-white {
+    width: 100%;
+    min-height: 400px;
+    background: grey;
+}
+
+textarea {
+    width: 100%;
+    height: 400px;
+    resize: none;
+    border: 0;
+    margin-bottom: -4px;
+}
+
+textarea:focus {
+    outline: none;
+}
