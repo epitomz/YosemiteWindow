@@ -6,6 +6,7 @@
   <link rel="stylesheet" href="css/style.css">
   <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
   <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+  <script src="js/script.js"></script>
 </head>
 
 <body class="screen">
@@ -22,8 +23,11 @@
 		<p>Aide</p>		
 	</div>
 	<div class="menu-droite">
-		<p>lla</p>
-		
+		<img class="bluetooth" src="img/bluetooth_off.png" alt="bluetooth" />
+	    <img class="wifi" src="img/wifi.png" alt="wifi" />
+	    <p style="margin-right: 2px;">96%</p>
+	    <img class="battery" src="img/battery.png" alt="battery" />
+        <p id="time"></p>
 	</div>
 </div>
 	
@@ -73,7 +77,7 @@
 </div>
 
 <div class="dock">
-	<img src="img/finder.png" alt="finder" style="width: 45px;"/>
+	<img src="img/finder.png" alt="finder" style="width: 45px; margin-left: 5px;"/>
     <img src="img/preferences.png" alt="preferences" style="width: 45px;"/>
     <img src="img/safari.png" alt="safari" style="width: 45px;"/>
     <img src="img/mail.png" alt="mail" style="width: 45px;"/>
@@ -83,7 +87,7 @@
 </div>
   
 <script>
-var x2 = $(document).width()-1100;
+var x2 = $(document).width()-1103;
 var y2 = $(document).height()-1100;
 
 $( ".window" ).draggable({ 

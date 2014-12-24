@@ -136,7 +136,7 @@ input:-moz-placeholder {
   -webkit-box-shadow: 0 4px 12px rgba(0,0,0,.5);
   box-shadow: 0 4px 12px rgba(0,0,0,.5);
   width: 800px;
-  margin:auto;
+  margin-left:300px;
   margin-top:120px;
   overflow:hidden;
   border:1px solid #C1C2C2;
@@ -403,6 +403,7 @@ span.new .plus.y {
 
 .menu-droite {
 	float: right;
+    margin-top: 2px;
 }
 
 .menu-droite p {
@@ -422,5 +423,4 @@ span.new .plus.y {
 	left: 25%;
 	border-top-left-radius: 7px;
 	border-top-right-radius: 7px;
-
 }
