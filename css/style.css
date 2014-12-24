@@ -380,7 +380,8 @@ span.new .plus.y {
 } 
 
 .menu {
-	background: rgba(238, 238, 238, 1);
+	background: url(../img/menu-bg.png) no-repeat fixed;
+	background-size: 140%;
 	height: 27px;
 }
 
@@ -417,6 +418,7 @@ span.new .plus.y {
 /* -------------- DOCK ----------------- */
 .dock {
 	background: url(../img/bg-blurred.jpg) no-repeat fixed;
+	background-size: 100%;
 	position: absolute;
 	width: 700px;
 	height: 50px;
