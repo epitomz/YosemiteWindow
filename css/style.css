@@ -463,6 +463,33 @@ textarea:focus {
     width: 500px;
 }
 
-#readme-window  .page-title {
+#readme-window .page-title {
     margin: 5px 0 0 150px;
+}
+
+/* -------------------- TOOLTIP DOCK ------------------------- */
+
+a.tooltips {
+  position: relative;
+  display: inline;
+}
+
+a.tooltips span {
+  position: absolute;
+  padding: 0 10px;
+  color: #FFFFFF;
+  background: #000000;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  visibility: hidden;
+  border-radius: 6px;
+}
+
+a:hover.tooltips span {
+  visibility: visible;
+  opacity: 0.8;
+  bottom: 55px;
+  margin-left: -120%;
+  z-index: 999;
 }
