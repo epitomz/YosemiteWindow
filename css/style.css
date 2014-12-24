@@ -280,8 +280,6 @@ input:-moz-placeholder {
   text-align:left;
 }
 
-
-
 .nav span.address > i.fa {
   position:absolute;
   right:5px;
@@ -443,7 +441,7 @@ textarea {
     height: 400px;
     resize: none;
     border: 0;
-    margin-bottom: -4px;
+    margin-bottom: -5px;
 }
 
 textarea:focus {

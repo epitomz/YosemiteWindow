@@ -76,7 +76,7 @@
   </div>  
 </div>
 
-<div class="window">
+<div class="window"  id="readme-window">
   <div class="top">
     <div class="panel">
       <span class="first"></span>
@@ -87,20 +87,6 @@
     <div class="nav">
         <p class="page-title" >readme.txt</p>
     </div>
-    
-    <div class="nav right">
-      <span class="share"><i class="fa fa-share-alt"></i></span>
-      <span class="tabs">
-        <span class="square front"></span>
-        <span class="square behind"></span>
-      </span>
-    </div>
-    
-    <span class="new">
-      <span class="plus x"></span>
-      <span class="plus y"></span>
-    </span>
- 
   </div>
   
   <div class="inside">
@@ -119,7 +105,7 @@
     <img src="img/itunes.png" alt="itunes" style="width: 45px;"/>
     <img src="img/messages.png" alt="messages" style="width: 45px;"/>
     <img src="img/preview.png" alt="preview" style="width: 45px;"/>
-    <img src="img/textedit.png" alt="textedit" style="width: 45px;"/>
+    <img id="textedit" src="img/textedit.png" alt="textedit" style="width: 45px;"/>
     <img src="img/trash.png" alt="trash" style="width: 45px;"/>
 </div>
   
@@ -131,8 +117,10 @@ var y2 = $(document).height()-1100;
 
 $( ".window" ).draggable({ 
 	cancel: ".inside,input,textarea",
-	containment: [ -300, -93, x2, 1300 ] 
+	containment: [ -300, -93, x2, 1300 ]
 });
+
+$( ".window" ).resizable();
 
 $("input.address").focus(function(){
   $(".fa-refresh").hide(500);

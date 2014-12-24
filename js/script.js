@@ -63,3 +63,17 @@ $(function() {
     setInterval(updateBattery, 30000);
 });
 
+
+/* ----------------------- WINDOW README ----------------------- */
+$(document).ready(function() {
+    $('.first').click(function() {
+        $('.first').parents().eq(2).hide();
+    });
+});
+
+$(document).ready(function() {
+    $('#textedit').click(function() {
+        $('#readme-window').show();
+    });
+});
+
