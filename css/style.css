@@ -94,6 +94,14 @@ body {
 	outline: none;
 }
 
+#log a:hover.tooltips span {
+  visibility: visible;
+  opacity: 0.8;
+  bottom: -50px;
+  left: 350px;
+  z-index: 999;
+}
+
 ::-webkit-input-placeholder { 
 	color: rgba(220, 220, 220, 0.5);
 }
@@ -155,6 +163,7 @@ input:-moz-placeholder {
   margin-top: 120px;
   overflow: hidden;
   position: absolute;
+  z-index: 100;
 }
 
 .inside {
@@ -434,7 +443,7 @@ span.new .plus.y {
 /* -------------- DOCK ----------------- */
 .dock {
 	background: url(../img/bg-blurred.jpg) no-repeat fixed;
-	background-size: 100%;
+	background-size: 1400px;
 	position: absolute;
 	width: 560px;
 	height: 50px;
@@ -442,6 +451,7 @@ span.new .plus.y {
 	left: 28%;
 	border-top-left-radius: 7px;
 	border-top-right-radius: 7px;
+	z-index: 0;
 }
 
 .dock a img {
@@ -452,6 +462,33 @@ span.new .plus.y {
 .separator {
 	height: 38px;
 	margin: 6px 5px 0 5px;
+}
+
+/* -------------------- TOOLTIP DOCK ------------------------- */
+
+a.tooltips {
+  position: relative;
+  display: inline;
+}
+
+a.tooltips span {
+  position: absolute;
+  padding: 0 10px;
+  color: #00000;
+  background: #f0f0f0;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  visibility: hidden;
+  border-radius: 6px;
+}
+
+a:hover.tooltips span {
+  visibility: visible;
+  opacity: 0.8;
+  bottom: 55px;
+  margin-left: -120%;
+  z-index: 999;
 }
 
 /* -------------- WINDOW ----------------- */
@@ -488,31 +525,4 @@ textarea:focus {
 
 #readme-window .page-title {
     margin: 5px 0 0 150px;
-}
-
-/* -------------------- TOOLTIP DOCK ------------------------- */
-
-a.tooltips {
-  position: relative;
-  display: inline;
-}
-
-a.tooltips span {
-  position: absolute;
-  padding: 0 10px;
-  color: #FFFFFF;
-  background: #000000;
-  height: 30px;
-  line-height: 30px;
-  text-align: center;
-  visibility: hidden;
-  border-radius: 6px;
-}
-
-a:hover.tooltips span {
-  visibility: visible;
-  opacity: 0.8;
-  bottom: 55px;
-  margin-left: -120%;
-  z-index: 999;
 }
