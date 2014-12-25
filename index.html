@@ -47,7 +47,7 @@
 		$( '.validate' ).hide();
 	});
 	
-	$('.password').on('input', function() {
+	$(' .password' ).on('input', function() {
 		if ( $('.password').val() != '' ) {
 			$( '.validate' ).show();
 		}
@@ -56,6 +56,12 @@
 		}
 	});
 
+	/* ------------------- CANCEL CLICK ---------------------- */
+	$( '.bottom' ).click(function() {
+		$( '.password' ).val('');
+		$( '.validate' ).hide();
+	});
+	
 </script>
 
 </body>
