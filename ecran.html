@@ -32,7 +32,7 @@
 	</div>
 </div>
 	
-<div class="window" id="safari-window">
+<div class="window" id="safari">
   <div class="top">
     <div class="panel">
       <span class="first"></span>
@@ -77,7 +77,7 @@
   </div>  
 </div>
 
-<div class="window"  id="readme-window">
+<div class="window"  id="textedit">
   <div class="top">
     <div class="panel">
       <span class="first"></span>
@@ -98,30 +98,55 @@
 </div>
 
 <div class="dock">
-	<a class="tooltips"><img src="img/finder.png" alt="finder" style="margin-left: 8px;" /><span>Finder</span></a>
-	<img class="app-on" src="img/app-on.png" />
-	<a class="tooltips"><img src="img/launchpad.png" alt="launchpad" /><span>Launchpad</span></a>
-	<img class="app-on" src="img/app-on.png" />
-	<a class="tooltips"><img id="safari" src="img/safari.png" alt="safari" /><span>Safari</span></a>
-	<img class="app-on" src="img/app-on.png" />
-    <a class="tooltips"><img src="img/calendar.png" alt="calendar" /><span>Calendar</span></a>
-    <img class="app-on" src="img/app-on.png" />
-    <a class="tooltips"><img src="img/itunes.png" alt="itunes" /><span>iTunes</span></a>
-    <img class="app-on" src="img/app-on.png" />
-    <a class="tooltips"><img src="img/appstore.png" alt="app store" /><span>AppStore</span></a>
-    <img class="app-on" src="img/app-on.png" />
-    <a class="tooltips"><img src="img/mail.png" alt="mail" /><span>Mail</span></a>
-    <img class="app-on" src="img/app-on.png" />
-    <a class="tooltips"><img src="img/messages.png" alt="messages" /><span>Messages</span></a>
-    <img class="app-on" src="img/app-on.png" />
-    <a class="tooltips"><img src="img/preview.png" alt="preview" /><span>Preview</span></a>
-    <img class="app-on" src="img/app-on.png" />
-    <a class="tooltips"><img id="textedit" src="img/textedit.png" /><span>Textedit</span></a>
-    <img class="app-on" src="img/app-on.png" />
-    <a class="tooltips"><img src="img/preferences.png" alt="preferences" /><span>Préférences</span></a>
-    <img class="app-on" src="img/app-on.png" />
+	<div class="app" id="finder-app">
+		<a class="tooltips"><img src="img/finder.png" alt="finder" style="margin-left: 8px;" /><span>Finder</span></a>
+		<img class="app-on app-on-hidden" src="img/app-on.png" />
+	</div>
+	<div class="app">
+		<a class="tooltips"><img src="img/launchpad.png" alt="launchpad" /><span>Launchpad</span></a>
+		<img class="app-on app-on-hidden" src="img/app-on.png" />
+	</div>
+	<div class="app" id="safari-app">
+		<a class="tooltips"><img src="img/safari.png" alt="safari" /><span>Safari</span></a>
+		<img class="app-on app-on-hidden" src="img/app-on.png" />
+	</div>
+    <div class="app" id="">
+		<a class="tooltips"><img src="img/calendar.png" alt="calendar" /><span>Calendar</span></a>
+		<img class="app-on app-on-hidden" src="img/app-on.png" />
+    </div>
+    <div class="app" id="">
+		<a class="tooltips"><img src="img/itunes.png" alt="itunes" /><span>iTunes</span></a>
+		<img class="app-on app-on-hidden" src="img/app-on.png" />
+    </div>
+    <div class="app" id="">
+    	<a class="tooltips"><img src="img/appstore.png" alt="app store" /><span>AppStore</span></a>
+		<img class="app-on app-on-hidden" src="img/app-on.png" />
+    </div>
+    <div class="app" id="">
+		<a class="tooltips"><img src="img/mail.png" alt="mail" /><span>Mail</span></a>
+		<img class="app-on app-on-hidden" src="img/app-on.png" />
+    </div>
+    <div class="app" id="">
+		<a class="tooltips"><img src="img/messages.png" alt="messages" /><span>Messages</span></a>
+		<img class="app-on app-on-hidden" src="img/app-on.png" />
+    </div>
+    <div class="app" id="">
+		<a class="tooltips"><img src="img/preview.png" alt="preview" /><span>Preview</span></a>
+		<img class="app-on app-on-hidden" src="img/app-on.png" />
+    </div>
+    <div class="app" id="textedit-app">
+		<a class="tooltips"><img src="img/textedit.png" /><span>Textedit</span></a>
+		<img class="app-on app-on-hidden" src="img/app-on.png" />
+    </div>
+    <div class="app" id="finder">
+		<a class="tooltips"><img src="img/preferences.png" alt="preferences" /><span>Préférences</span></a>
+		<img class="app-on app-on-hidden" src="img/app-on.png" />
+    </div>
     <img class="separator" src="img/separator.png" alt="separator" />
-    <a class="tooltips"><img src="img/trash.png" alt="trash" /><span>Trash</span></a>
+    <div class="app" id="">
+    	<a class="tooltips"><img src="img/trash.png" alt="trash" /><span>Trash</span></a>
+    	<img class="app-on app-on-hidden" src="img/app-on.png" />
+    </div>
 </div>
   
 <script>
@@ -144,9 +169,18 @@ $("input.address").focus(function(){
   $(".fa-refresh").show(500);
 });
 
+
 /* ------------------------ APP-ON POINTS -------------------------- */
-$(function() {
-	$( '.app-on' ).css("visibility", "hidden");
+
+$( '.app' ).click(function() {
+	$( this ).children( '.app-on' ).removeClass( 'app-on-hidden' );
+});
+
+
+/* ------------------------ HIDE WINDOWS -------------------------- */
+
+$(document).ready(function() {
+	$( '.window' ).hide();
 });
 
 </script>

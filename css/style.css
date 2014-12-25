@@ -454,6 +454,10 @@ span.new .plus.y {
 	z-index: 0;
 }
 
+.dock div {
+	display: inline;
+}
+
 .dock a img {
 	width: 40px;
 	margin-bottom: 2px;
@@ -472,6 +476,14 @@ span.new .plus.y {
 	position: relative;
 	top: 3px;
 	right: 22px;
+}
+
+.app-on-hidden {
+	visibility: hidden;
+}
+
+.app-on-show {
+	visibility: visible;
 }
 
 /* -------------------- TOOLTIP DOCK ------------------------- */
@@ -529,10 +541,10 @@ textarea:focus {
     width: 800px;
 }
 
-#readme-window {
+#textedit {
     width: 500px;
 }
 
-#readme-window .page-title {
+#textedit .page-title {
     margin: 5px 0 0 150px;
 }

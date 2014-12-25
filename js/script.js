@@ -67,14 +67,13 @@ $(function() {
 $(document).ready(function() {
     $('.first').click(function() {
         $(this).parents().eq(2).hide();
-    });
+        var appName = $(this).parents().eq(2).attr('id');
+        $( '#' + appName + '-app' ).children( '.app-on' ).addClass( 'app-on-hidden' );
+    });    
     
-    $('#textedit').click(function() {
-        $('#readme-window').show();
-    });
-    
-    $('#safari').click(function() {
-        $('#safari-window').show();
+    $( '.app' ).click(function() {
+	   var app = $(this).attr('id').slice(0,-4);
+	   $( '#' + app ).show();
     });   
 });
 
