@@ -29,8 +29,11 @@
 	    </div>
 	    <p>Antonin Delbos</p>
 	    <form action="ecran.html">
-	    	<input class="password" type="password" title="Peu importe !" placeholder="mot de passe">
+	    	<input class="password" type="password" title="Peu importe !" placeholder="mot de passe"></input>
 	    </form>
+	    <div class="validate">
+			<a href="ecran.html"><img id="val" src="img/val.png" /></a>
+	    </div>
     </div>
     
     <div class="bottom">
@@ -38,5 +41,22 @@
 		<p>Annuler</p>
     </div>
     
+<script>
+	/* --------------- TEST PASSWORD FIELD ------------------- */
+	$(function() {
+		$( '.validate' ).hide();
+	});
+	
+	$('.password').on('input', function() {
+		if ( $('.password').val() != '' ) {
+			$( '.validate' ).show();
+		}
+		else {
+			$( '.validate' ).hide();
+		}
+	});
+
+</script>
+
 </body>
 </html>

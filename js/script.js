@@ -18,7 +18,7 @@ function updateTime() {
     m = serverTime.getMinutes();
     var n = weekday[serverTime.getDay()];
     
-    if (h >= 12) {
+    if (h > 12) {
         h = h -12;
         if (m < 10) {
             $('#time').html(n + " " + h + ":0" + m + " PM");
