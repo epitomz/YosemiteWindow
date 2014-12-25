@@ -50,7 +50,7 @@ function updateBattery() {
     batteryPercentage = batteryPercentage - 1;
     if (batteryPercentage == 0) {
         batteryPercentage = 100;
-        alert("Bon allez, t'as de la chance, j'ai rechargé ton mac !");
+        alert("Bon allez, t'as de la chance, j'ai rechargé ton mac ! Par contre, désolé mais je n'ai pas pu remonter le temps...");
         $('.battery-percentage').html("100%");
     }
     else {
@@ -63,17 +63,31 @@ $(function() {
     setInterval(updateBattery, 30000);
 });
 
-/* ----------------------- CLOSE WINDOWS ----------------------- */
+
 $(document).ready(function() {
-    $('.first').click(function() {
-        $(this).parents().eq(2).hide();
-        var appName = $(this).parents().eq(2).attr('id');
+	/* ----------------------- CLOSE WINDOWS ----------------------- */
+    $( '.close' ).click(function() {
+        $( this ).parents().eq(2).hide();
+        var appName = $( this ).parents().eq(2).attr('id');
         $( '#' + appName + '-app' ).children( '.app-on' ).addClass( 'app-on-hidden' );
     });    
     
     $( '.app' ).click(function() {
-	   var app = $(this).attr('id').slice(0,-4);
+	   var app = $(this).attr('id').slice(0, -4);
 	   $( '#' + app ).show();
-    });   
+    }); 
+    
+    /* ------------------- HOVER BUTTONS WINDOWS -------------------- */
+	$( '.window-button' ).mouseover(function() {
+		var name = $( this ).attr('id');
+		$( this ).attr('src', 'img/window-buttons/' + name + '-hover.png');
+	});
+	
+	$( '.window-button' ).mouseout(function() {
+		var name = $( this ).attr('id');
+		$( this ).attr('src', 'img/window-buttons/' + name + '.png');
+	});		      
 });
+
+
 

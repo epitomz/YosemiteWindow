@@ -210,32 +210,6 @@ input:-moz-placeholder {
   padding-top: 2px;
 }
 
-.panel > span {
-  display: inline-block;
-  float: left;
-  width: 12px;
-  height: 12px;
-  margin-right: 7px;
-  -webkit-border-radius: 6px;
-  -moz-border-radius: 6px;
-  border-radius: 6px;  
-  cursor: pointer;
-
-}
-
-.panel span.first {
-  background: #FF5F4F;
-}
-
-.panel span.second {
-  background: #F9C206;
-}
-
-.panel span.third {
-  background: #19CC32;
-}
-
-
 .nav {
   overflow: hidden;
 }
@@ -557,4 +531,11 @@ textarea:focus {
 	height: 100%;
 	z-index: 9999;
 	background: url('../img/page-loader.gif') 50% 50% no-repeat rgb(249,249,249);
+}
+
+.window-button {
+	width: 12px;
+	margin-left: 1px;
+	margin-right: 1px;
+	margin-bottom: 3px;
 }

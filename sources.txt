@@ -1,2 +1,8 @@
 ---------- code fenetre yosemite ------------
 http://codepen.io/ozer/pen/ckwyd
+
+——————- fenêtre transparente yosemite ——————
+http://codepen.io/znak/pen/ntsdy
+
+——————- détecter type de browser ———————————
+http://stackoverflow.com/questions/3514784/what-is-the-best-way-to-detect-a-handheld-device-in-jquery
