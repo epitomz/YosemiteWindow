@@ -539,3 +539,11 @@ textarea:focus {
 	margin-right: 1px;
 	margin-bottom: 3px;
 }
+
+.custom-menu {
+    z-index:1000;
+    position: absolute;
+    background-color:#C0C0C0;
+    border: 1px solid black;
+    padding: 2px;
+}

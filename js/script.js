@@ -66,7 +66,7 @@ $(function() {
 
 $(document).ready(function() {
 	/* ----------------------- CLOSE WINDOWS ----------------------- */
-    $( '.close' ).click(function() {
+    $( '#close' ).click(function() {
         $( this ).parents().eq(2).hide();
         var appName = $( this ).parents().eq(2).attr('id');
         $( '#' + appName + '-app' ).children( '.app-on' ).addClass( 'app-on-hidden' );
@@ -86,8 +86,7 @@ $(document).ready(function() {
 	$( '.window-button' ).mouseout(function() {
 		var name = $( this ).attr('id');
 		$( this ).attr('src', 'img/window-buttons/' + name + '.png');
-	});		      
+	});		
+	     
 });
-
-
 
