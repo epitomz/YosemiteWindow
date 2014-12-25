@@ -441,7 +441,7 @@ span.new .plus.y {
 
 .separator {
 	height: 38px;
-	margin: 6px 5px 0 5px;
+	margin: 6px 5px 0 0;
 }
 
 .app-on {
