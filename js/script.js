@@ -87,7 +87,20 @@ $(document).ready(function() {
 	$( '.window-button' ).mouseout(function() {
 		var name = $( this ).attr('id').slice(0, -2);
 		$( this ).attr('src', 'img/window-buttons/' + name + '.png');
-	});		
+	});
+	
+/* ------------------------ Z-INDEX WINDOWS -------------------------- */
+	// on click
+	$( '.window' ).click(function() {
+		$( '.window' ).css("z-index", "0");
+		$( this ).css("z-index", "1000");
+	});	
+	
+	//on drag
+	$( '.window' ).on( "drag", function() {
+		$( '.window' ).css("z-index", "0");
+		$( this ).css("z-index", "1000");
+	});
 	     
 });
 
